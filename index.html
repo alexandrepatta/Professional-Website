@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Wix+Madefor+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Wix+Madefor+Display&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Website</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <!-- header---------------------------------------------------------------------------------------------- -->
+  <body>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch">
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page"
+                  >Home</a
+                >
+                <a
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Professional</a
+                >
+                <a
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Experience</a
+                >
+                <a
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page"
+            >Home</a
+          >
+          <a
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Professional</a
+          >
+          <a
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Experience</a
+          >
+          <a
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 flex sm:py-[20rem] ">
+      <div class="absolute top-0 right-0 -z-10 opacity-90  object-right md:object-center">
+        <img
+          src="/assets/alex.png" class="max-h-[60rem]"
+        />
+      </div>
+      <div class="mx-auto">
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          Alexandre Luís Patta Fonseca
+        </h2>
+        <p class="mt-6 text-2xl leading-4 text-gray-300">
+          Quality Assurance Analyst
+        </p>
+        <p class="flex">
+          <img
+          src="/assets/html.svg" class="pt-6 max-h-[4rem] "
+          />
+          <img
+          src="/assets/Java.svg" class="pt-6 max-h-[4rem] "
+          />
+          <img
+          src="/assets/tailwind.png" class="pt- px-3  max-h-[3rem] "
+          />
+          
+        </p>
+      </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="relative isolate overflow-hidden bg-gray-100 py-24 flex sm:py-48">
+      <div class="mx-auto">
+        
+        <p class="mt-6 max-w-7xl leading-relaxed  text-4xl text-center text-gray-900">
+          Starting my career in the Quality Assurance area as a committed and
+          motivated member of the team. I look forward to applying my
+          determination to learn and my ability to analyze tests to contribute
+          to improving the quality of products and processes. I am ready to gain
+          practical knowledge and grow professionally in the QA field.
+        </p>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="box">
+      <div id="download">
+        <a> Download </a>
+      </div>
+    </div>
+
+    <div id="social-links">
+      <a href="https://github.com/alexandrepatta" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+
+      <a href="https://www.instagram.com/alexxluis_/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+
+      <a href="https://www.linkedin.com/in/alexandrepatta/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+
+      <a href="https://w.app/GlnTaH" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+
+    <footer>Made by Alexandre Luís Patta Fonseca</footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

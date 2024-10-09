@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./assets/tailwind.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Website</title>
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
   <!-- header---------------------------------------------------------------------------------------------- -->
   <body>
@@ -84,16 +83,20 @@
                   >Home</a
                 >
                 <a
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  id = "professional-btn"  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Professional</a
                 >
                 <a
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  id = "experience-btn" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Experience</a
                 >
                 <a
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  id = "contact-btn" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Contact</a
+                >
+                <a
+                  id = "contact-btn" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >My work</a
                 >
               </div>
             </div>
@@ -167,129 +170,383 @@
       </div>
     </div>
     <!-- Professional------------------------------------------------------------------------------------------------------------------------------------ -->
-    <div class="bg-gray-900 py-24  sm:py-38">
-      <div class="mt-6  text-5xl text-center text-gray-100">
-            Professional
-          </div>
-          <div
-            class="mt-6  text-3xl text-center text-gray-200 pb-[6rem]"
-          >
-            Qualifications
-          </div>
-      
-          <div class="flex pb-7  ">
-
-            <div class="mx-auto" ></div>
-              <a class=" text-2xl text-gray-100 w-40">Java Script</a>
-            
-            <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
-            <div class="bg-blue-600 h-2.5 rounded-full  my-auto" id="loading-bar1" style="width: 0% "></div>
-            </div>
-            
-              <a class="px-10 flex text-2xl my-auto text-gray-100"id="loading-number1">10%</a>
-            
-              <div class=" mx-auto  "></div>
-          </div>
-
-          <div class="flex pb-7  ">
-
-            <div class="mx-auto" ></div>
-              <a class=" text-2xl text-gray-100 w-40 pr-6">HTML</a>
-            
-            <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
-            <div class=" bg-blue-600 h-2.5 rounded-full  my-auto" id="loading-bar2" style="width: 0% "></div>
-            </div>
-            
-              <a class="px-10 flex text-2xl my-auto text-gray-100"id="loading-number2">10%</a>
-              
-              <div class=" mx-auto  "></div>
-          </div>
-          <div class="flex pb-7  ">
-
-            <div class="mx-auto" ></div>
-              <a class=" text-2xl text-gray-100 w-40">CSS</a>
-            
-            <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
-            <div class="bg-blue-600 h-2.5 rounded-full  my-auto" id="loading-bar3" style="width: 0% "></div>
-            </div>
-            
-              <a class="px-10 flex text-2xl my-auto text-gray-100"id="loading-number3">10%</a>
-              
-              <div class=" mx-auto  "></div>
-              
-          </div>
-          <div class="flex pb-7  ">
-
-            <div class="mx-auto" ></div>
-              <a class=" text-2xl text-gray-100 w-40">Tailwind CSS</a>
-            
-            <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
-            <div class="bg-blue-600 h-2.5 rounded-full  my-auto" id="loading-bar4" style="width: 0% "></div>
-            </div>
-            
-              <a class="px-10 flex text-2xl my-auto text-gray-100"id="loading-number4">10%</a>
-              
-              <div class=" mx-auto  "></div>
-              
-          </div>
-        
+    <div id="professional-section" class="bg-gray-900 py-28 sm:py-38">
+  <div class="mt-6 text-5xl text-center text-gray-100">Professional</div>
+  <div class="mt-6 text-3xl text-center text-gray-200 pb-[6rem]">
+    Qualifications
+  </div>
+  <div class="pb-4 text-3xl text-center text-gray-200">
+    Programming languages
+  </div>
+  <div class="border bg-gray-500/5 border-gray-800 rounded-lg py-4 mx-auto max-w-4xl">
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl   text-gray-100 w-40">Java</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class="bg-blue-600 h-2.5 rounded-full my-auto" id="loading-bar5" style="width: 0%"></div>
       </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number5">10%</a>
     </div>
-   <!--Experiiences---------------------------------------------------------------------------------------------------------------------------------------->
-       <div class="bg-gray-100 py-24  sm:py-38">
-                    <div class="mt-6  text-5xl text-center text-gray-900">
-                      Experience
-                    </div>
-                    <div class="mt-7 text-3xl text-center text-gray-800 pb-[6rem]">
-                      <p class="font-medium">Mobile Application Tester</p>
-                      <p class="text-2xl text-it">in Inatel Competence Center - Qualcomm</p>
-                      <p class="text-2xl text-it">2017-2018</p>
-                    </div>
-          <div class="text-8xl  text-center text-gray-800 pb-[3.5rem]">
+
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">JavaScript</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class="bg-blue-600 h-2.5 rounded-full my-auto" id="loading-bar1" style="width: 10%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number1">10%</a>
+    </div>
+
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">HTML</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class="bg-blue-600 h-2.5 rounded-full my-auto" id="loading-bar2" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number2">10%</a>
+    </div>
+
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">CSS</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class="bg-blue-600 h-2.5 rounded-full my-auto" id="loading-bar3" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number3">10%</a>
+    </div>
+
+    <div class="flex pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">Tailwind CSS</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class="bg-blue-600 h-2.5 rounded-full my-auto" id="loading-bar4" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number4">10%</a>
+    </div>
+  </div>
+
+  <div class=" py-24 pb-4  text-3xl text-center text-gray-200">
+    Test automation
+  </div>
+  <div class="border bg-gray-500/5 border-gray-800 rounded-lg py-4 mx-auto max-w-4xl">
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl   text-gray-100 w-40">Appium</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class=" h-2.5 rounded-full my-auto bg-green-500" id="loading-bar6" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number6">10%</a>
+    </div>
+
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">Robot</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class=" bg-green-500 h-2.5 rounded-full my-auto" id="loading-bar7" style="width: 10%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number7">10%</a>
+    </div>
+
+    <div class="flex pb-7 pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">Selenium</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class=" bg-green-500 h-2.5 rounded-full my-auto" id="loading-bar8" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number8">10%</a>
+    </div>
+
+    <div class="flex pl-4 justify-center">
+      <a class="text-2xl text-gray-100 w-40">Cypress</a>
+      <div class="w-full max-w-[609px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-auto">
+        <div class=" bg-green-500 h-2.5 rounded-full my-auto" id="loading-bar9" style="width: 0%"></div>
+      </div>
+      <a class="px-10 flex text-2xl my-auto text-gray-100" id="loading-number9">10%</a>
+    </div>
+
+  </div>
+
+ 
+  <div class="pb-10 py-24 text-3xl text-center text-gray-200">Agile Methodologies & Test Management
+  </div>
+    
+ <a class="flex flex-wrap justify-center gap-8">
+
+  <div class="flex flex-col items-center">
+    <img src="/assets/scrum.svg" class="bg-gradient-to-b from-white to-gray-400 border-2 p-2 border-gray-800 rounded-full max-h-[10rem] shadow-black shadow-md" />
+    <div class="mt-2 text-center text-xl text-gray-100">Scrum</div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <img src="/assets/kanban.svg" class="bg-gradient-to-b from-white to-gray-400 border-2 p-8 border-gray-800 rounded-full max-h-[10rem] shadow-black shadow-md" />
+    <div class="mt-2 text-center text-xl text-gray-100">Kanban</div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <img src="/assets/jira.svg" class=" bg-gradient-to-b from-white to-gray-400 border-2 p-8 border-gray-800 rounded-full max-h-[10rem] shadow-black shadow-md" />
+    <div class="mt-2 text-center text-xl text-gray-100">Jira Atlassian</div>
+  </div>
+
+</a>
+
+
+</div>
+</div>
+
+
+</div>
+
+    <!--Experiences---------------------------------------------------------------------------------------------------------------------------------------->
+
+   <div id = "experience-section" class="bg-gradient-to-b from-gray-300/50 to-gray-400/100 py-24 sm:py-38">
+    
+  <div class=" pb-6 text-5xl text-center text-gray-900">
+    Experiences
+
+    <div
+      id="ExpCards"
+      class="flex flex-wrap items-center justify-center mx-auto px-4 py-32 max-w-7xl gap-4"
+    >
+      <!-- Card 1 -->
+      <button class="hover:scale-105 ease-in-out duration-300 delay-75 flex-1 ">
+        <div id="ExpCard1" class="text-2xl">
+          <div class="text-lg border bg-gray-100 text-black shadow-lg rounded-xl text-center">
+            <p class="pt-2 px-2 font-medium">Mobile Application Tester</p>
+            <p class="px-4 text-gray-600">
+              at Inatel Competence Center - Qualcomm
+            </p>
+            <p class="pb-2 px-2 text-gray-600">2017-2018</p>
+            <div
+              class="bg-gradient-to-r from-gray-900 to-black border border-zinc-950 opacity-95 p-8 shadow-lg rounded-lg text-center font-semibold py-32"
+            >
+              <img
+                src="/assets/mobile.svg"
+                class="max-h-[6rem] invert mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </button>
+
+      <!-- Card 2 -->
+      <button class="hover:scale-105 ease-in-out duration-300 delay-75 flex-1">
+        <div id="ExpCard2" class="text-2xl">
+          <div class="text-lg border bg-gray-100 text-black shadow-lg rounded-xl text-center">
+            <p class="pt-2 px-2 font-medium">Maintenance Planning</p>
+            <p class="px-4 text-gray-600">
+              at Transportadora Brasileira de Gasoduto
+            </p>
+            <p class="pb-2 px-2 text-gray-600">2022-2023</p>
+            <div
+              class="z-0 bg-black border border-zinc-950 opacity-95 p-8 shadow-lg rounded-lg font-semibold py-32"
+            >
+              <img
+                src="/assets/maintenance.svg"
+                class="max-h-[6rem] invert mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </button>
+
+      <!-- Card 3 -->
+      <button class="hover:scale-105 ease-in-out duration-300 delay-75 flex-1">
+        <div id="ExpCard3" class="text-2xl">
+          <div class="text-lg border bg-gray-100 text-black shadow-lg rounded-xl text-center ">
+            <p class="pt-2 px-2 font-medium">Quality Assurance Analyst</p>
+            <p class="px-4 text-gray-600">at 1mage Software</p>
+            <p class="pb-2 px-2 text-gray-600">2024-Present</p>
+            <div
+              class="z-0 bg-gradient-to-r from-black to-gray-900 border border-zinc-950 opacity-95 p-8 shadow-lg rounded-lg font-semibold py-32"
+            >
+              <img
+                src="/assets/approval.svg"
+                class="max-h-[6rem] invert mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <!--start-->
+      <div
+        id="CardContent1"
+        class="hidden max-w-4xl border bg-gray-100 shadow-lg rounded-xl justify-center mx-auto text-center mt-10"
+      >
+        <div
+          class="z-0 bg-black border border-zinc-950 opacity-95 text-white rounded-lg font-semibold transition-all"
+        >
+          <div class="text-2xl text-center pt-4 pb-4">
+            <p class="font-medium">Mobile Application Tester</p>
+            <p class="text-2xl text-it">
+              in Inatel Competence Center - Qualcomm
+            </p>
+            <p class="text-2xl text-it">2017-2018</p>
+          </div>
+        </div>
+        <div class="">
+          <div class="text-7xl pt-6 text-center text-gray-800 pb-5">
             <span class="mr-12">
-              <button onclick="changeClass(button1, [button2, button3])">
-                <ion-icon id="expButton1" class="border-4 rounded-full p-2 hover:opacity-100 border-green-500 opacity-100" name="search"></ion-icon>
+              <button>
+                <ion-icon
+                  id="expButton1"
+                  class="border-4 rounded-full p-2 hover:opacity-100 border-green-500 opacity-100"
+                  name="search"
+                ></ion-icon>
               </button>
             </span>
 
             <span class="mr-12">
-              <button onclick="changeClass(button2, [button1, button3])">
-                <ion-icon id="expButton2" class="border-4 rounded-full border-gray-400 hover:opacity-100  opacity-75 p-2" name="document-text"></ion-icon>
+              <button>
+                <ion-icon
+                  id="expButton2"
+                  class="border-4 rounded-full border-gray-400 hover:opacity-100 opacity-75 p-2"
+                  name="document-text"
+                ></ion-icon>
               </button>
             </span>
 
             <span>
-              <button onclick="changeClass(button3, [button1, button2])">
-                <ion-icon id="expButton3" class="border-4 rounded-full hover:opacity-100  border-gray-400 opacity-75 p-2" name="trending-up"></ion-icon>
+              <button>
+                <ion-icon
+                  id="expButton3"
+                  class="border-4 rounded-full hover:opacity-100 border-gray-400 opacity-75 p-2"
+                  name="trending-up"
+                ></ion-icon>
               </button>
             </span>
           </div>
 
-        
-          <p id="title" class="text-center text-3xl py-2">Analysis and Test Execution</p>
-                
-              <div class="max-w-7xl mx-auto px-4 py-12">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-2xl">
-                      <div class=" p-8 shadow-lg rounded-lg text-slate-100 font-semibold bg-slate-700">
-                        <ul>
-                          <li id="cont1" class="pb-8">Carrying out systems analysis of mobile applications</li>
-                          <li id="cont2" >Execution of exploratory tests</li>
-                        </ul>
-                      </div>
-                      <div class="p-8 shadow-lg rounded-lg text-slate-100 font-semibold bg-slate-700 ">
-                        <ul>
-                          <li id="cont3"  class="pb-8">Conducting functional tests</li>
-                          <li id="cont4" >Executing performance tests</li>
-                        </ul>
-                      </div>
-                  </div>
-           
-        </div>
-         
-      </div>
-    <!-- Contact------------------------------------------------------------------------------------------------------------------------------------ -->
+          <p id="title" class="text-center text-2xl py-2">
+            Analysis and Test Execution
+          </p>
 
-    <div id="social-links">
+          <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-xl">
+              <div
+                class="border border-zinc-950 bg-opacity-5 text-black p-8 shadow-lg rounded-lg text-center font-semibold bg-slate-700"
+              >
+                <ul>
+                  <li id="cont1" class="pb-8">
+                    Carrying out systems analysis of mobile applications
+                  </li>
+                  <li id="cont2">Execution of exploratory tests</li>
+                </ul>
+              </div>
+              <div
+                class="border border-zinc-950 bg-opacity-5 text-black p-8 shadow-lg rounded-lg text-center font-semibold bg-slate-700"
+              >
+                <ul>
+                  <li id="cont3" class="pb-8">Conducting functional tests</li>
+                  <li id="cont4">Executing performance tests</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          id="backbutton"
+          class="border rounded-full border-green-700 px-6 py-0 bg-black font-semibold hover:scale-125 ease-in-out duration-300 delay-75 shadow-lg text-white"
+        >
+          Back
+        </button>
+        <div class="py-4"></div>
+      </div>
+    </div>
+
+    <!-- my work------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<div id="mywork-section" class="bg-gray-900 py-24 sm:py-38 text-center">
+    <div class="pb-6 text-5xl text-gray-200">
+        My Work
+    </div>
+    <div class="text-gray-200 text-lg py-12 max-w-4xl mx-auto">
+        Hi everyone! I’ll be showcasing some of my work. I’ll be using the Spotify public API to run a series of automated tests. The goal is to validate the API's functionalities and ensure the data returned meets expectations. Additionally, I’ll explore scenarios to identify any potential issues or areas for improvement. Let’s get started!
+    </div>
+    <p class="text-gray-200 text-lg py-12 pb-24 max-w-4xl mx-auto">* Let's begin by using the test API. Please search for your favorite artist to check their top tracks and popularity. It doesn’t have to be your absolute favorite... but hey, we won’t judge if it is!</p>
+
+<div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-5">
+
+    <div class="relative max-w-lg w-full">
+        <!-- Campo de busca -->
+        <input id="search" type="text" placeholder="Search..."
+            class="border bg-gray-500/10 border-gray-800 rounded-lg text-gray-300 py-2 pl-4 pr-10 w-full focus:outline-none focus:border-green-950">
+        
+        <!-- Ícone de busca à direita -->
+        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+            <button id="searchButton">
+                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18l6-6m0 0l-6-6m6 6H3"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="artistInfo" class="flex flex-col items-center rounded-lg  bg-gradient-to-b from-gray-900 to-gray-950/100 border-gray-800 py-20 mx-auto max-w-7xl mt-12 shadow-xl"> 
+    <!-- Limita a largura da seção -->
+    <div class="w-full max-w-5xl sm:max-w-2xl lg:max-w-4xl mx-auto">
+        
+        <!-- Campo do Nome do Artista -->
+        <h2 class="p-2 text-3xl text-gray-300 rounded-lg border bg-gray-950 border-gray-900 h-[50px] w-full text-center" id="artistName"></h2>
+
+        <!-- Container que organiza a imagem e o campo das músicas -->
+        <div class="flex flex-col sm:flex-row justify-center items-center sm:items-start mt-10 w-full space-y-6 sm:space-y-0 sm:space-x-6">
+            <!-- Imagem do Artista -->
+            <img id="artistImage" alt="Artist Image" class="w-[250px] h-[250px] object-cover rounded-lg shadow-lg border bg-gray-950 border-gray-900" />
+
+            <!-- Campo de músicas com altura total igual à altura da imagem (238px) -->
+            <div class="flex-1 text-left text-gray-200 text-xl space-y-2">
+                <!-- Track 1 -->
+                <div class="flex items-center justify-start">
+                    <span id="trackNumber01" class="text-gray-400 mr-2 h-[44px] w-[44px] border border-gray-900 rounded-lg flex items-center justify-center bg-gray-950">1</span> <!-- Número da track -->
+                    <img id="albumTrack01" class="h-[44px] w-[44px] bg-gray-950 border border-gray-900 rounded-lg mr-2" />
+                    <p id="topTrack01" class="rounded-lg p-2 border w-full bg-gray-950 border-gray-900 h-[44px]"></p>
+                </div>
+                <!-- Track 2 -->
+                <div class="flex items-center justify-start">
+                    <span id="trackNumber02" class="text-gray-400 mr-2 h-[44px] w-[44px] border border-gray-900 rounded-lg flex items-center justify-center bg-gray-950">2</span> <!-- Número da track -->
+                    <img id="albumTrack02" class="h-[44px] w-[44px] bg-gray-950 border border-gray-900 rounded-lg mr-2" />
+                    <p id="topTrack02" class="rounded-lg p-2 border w-full bg-gray-950 border-gray-900 h-[44px]"></p>
+                </div>
+                <!-- Track 3 -->
+                <div class="flex items-center justify-start">
+                    <span id="trackNumber03" class="text-gray-400 mr-2 h-[44px] w-[44px] border border-gray-900 rounded-lg flex items-center justify-center bg-gray-950">3</span> <!-- Número da track -->
+                    <img id="albumTrack03" class="h-[44px] w-[44px] bg-gray-950 border border-gray-900 rounded-lg mr-2" />
+                    <p id="topTrack03" class="rounded-lg p-2 border w-full bg-gray-950 border-gray-900 h-[44px]"></p>
+                </div>
+                <!-- Track 4 -->
+                <div class="flex items-center justify-start">
+                    <span id="trackNumber04" class="text-gray-400 mr-2 h-[44px] w-[44px] border border-gray-900 rounded-lg flex items-center justify-center bg-gray-950">4</span> <!-- Número da track -->
+                    <img id="albumTrack04" class="h-[44px] w-[44px] bg-gray-950 border border-gray-900 rounded-lg mr-2" />
+                    <p id="topTrack04" class="rounded-lg p-2 border w-full bg-gray-950 border-gray-900 h-[44px]"></p>
+                </div>
+                <!-- Track 5 -->
+                <div class="flex items-center justify-start">
+                    <span id="trackNumber05" class="text-gray-400 mr-2 h-[44px] w-[44px] border border-gray-900 rounded-lg flex items-center justify-center bg-gray-950">5</span> <!-- Número da track -->
+                    <img id="albumTrack05" class="h-[44px] w-[44px] bg-gray-950 border border-gray-900 rounded-lg mr-2" />
+                    <p id="topTrack05" class="rounded-lg p-2 border w-full bg-gray-950 border-gray-900 h-[44px]"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popularidade -->
+    <div class="py-12 text-2xl text-gray-300 text-center">Popularity</div>
+    
+    <div class="relative flex justify-center items-center mt-4">
+        <!-- Círculo externo -->
+        <div class="w-[300px] h-[300px] rounded-full border-4 border-gray-900 flex items-center justify-center">
+            <!-- Círculo interno -->
+            <div class="w-[240px] h-[240px] rounded-full bg-gray-950 flex items-center justify-center">
+                <span id="popularityNumber" class="text-gray-300 text-8xl">--</span> <!-- Número dentro do círculo -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<!-- Contact------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div id="contact-section " class="bg-gray-200 py-10 sm:py-38 text-center">
       <a href="https://github.com/alexandrepatta" target="_blank">
         <ion-icon name="logo-github"></ion-icon>
       </a>
@@ -305,9 +562,10 @@
       <a href="https://w.app/GlnTaH" target="_blank">
         <ion-icon name="logo-whatsapp"></ion-icon>
       </a>
-    </div>
+    
 
     <footer>Made by Alexandre Luís Patta Fonseca</footer>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
